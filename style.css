@@ -1,0 +1,94 @@
+// Dynamic Year in Footer
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// Navbar Scroll Effect
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+
+// Mobile Menu Toggle
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    const icon = hamburger.querySelector('i');
+    if(navLinks.classList.contains('active')){
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-times');
+    } else {
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+    }
+});
+
+// Close mobile menu on link click
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        hamburger.querySelector('i').classList.remove('fa-times');
+        hamburger.querySelector('i').classList.add('fa-bars');
+    });
+});
+
+// Scroll Animations (Intersection Observer)
+const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.15
+};
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            observer.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
+const animatedElements = document.querySelectorAll('.slide-up, .slide-left, .slide-right, .fade-in');
+animatedElements.forEach(el => observer.observe(el));
+
+// Form Tab Switching
+function openForm(formType) {
+    // Hide all forms
+    document.getElementById('brand-form').classList.remove('active-form');
+    document.getElementById('creator-form').classList.remove('active-form');
+    
+    // Remove active class from tabs
+    document.getElementById('brand-tab').classList.remove('active');
+    document.getElementById('creator-tab').classList.remove('active');
+    
+    // Show selected form and set tab active
+    if (formType === 'brand') {
+        document.getElementById('brand-form').classList.add('active-form');
+        document.getElementById('brand-tab').classList.add('active');
+    } else if (formType === 'creator') {
+        document.getElementById('creator-form').classList.add('active-form');
+        document.getElementById('creator-tab').classList.add('active');
+    }
+}
+
+// FAQ Accordion
+const accordionItems = document.querySelectorAll('.accordion-item');
+
+accordionItems.forEach(item => {
+    const header = item.querySelector('.accordion-header');
+    header.addEventListener('click', () => {
+        // Close others
+        accordionItems.forEach(otherItem => {
+            if (otherItem !== item) {
+                otherItem.classList.remove('active');
+            }
+        });
+        // Toggle current
+        item.classList.toggle('active');
+    });
+});
+  
