@@ -1,161 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The AQ Media</title>
-
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
-body{
-background:#0d0d0d;
-color:#fff;
-}
-
-header{
-background:#000;
-padding:20px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-position:sticky;
-top:0;
-}
-
-.logo{
-font-size:28px;
-font-weight:bold;
-color:#d4af37;
-}
-
-nav a{
-color:#fff;
-text-decoration:none;
-margin-left:20px;
-}
-
-.hero{
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-background:linear-gradient(to right,#000,#1a1a1a);
-}
-
-.hero h1{
-font-size:55px;
-color:#d4af37;
-}
-
-.hero p{
-font-size:22px;
-margin-top:20px;
-line-height:35px;
-}
-
-.btn{
-display:inline-block;
-margin-top:30px;
-padding:15px 40px;
-background:#d4af37;
-color:#000;
-text-decoration:none;
-font-weight:bold;
-border-radius:40px;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The AQ Media | Premium Influencer Marketing Agency</title>
+    <meta name="description" content="The AQ Media - Premium Influencer Marketing & Creator Management Agency founded by Arman Qureshi in Mumbai.">
+    <!-- Google Fonts: Playfair Display (Luxury) & Poppins (Modern) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">The <span>AQ</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#founder">Founder</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#forms-section">Join Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
 
-<div class="logo">
-THE AQ MEDIA
-</div>
+    <!-- Hero Banner -->
+    <header id="home" class="hero section-dark">
+        <div class="hero-content fade-in">
+            <h1>Elevate Your Brand with <span>The AQ Media</span></h1>
+            <p>India's Premium Influencer Marketing & Creator Management Agency</p>
+            <div class="hero-buttons">
+                <a href="#forms-section" class="btn-gold">Hire Creators</a>
+                <a href="#forms-section" class="btn-outline" onclick="document.getElementById('creator-tab').click()">Join as Creator</a>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </header>
 
-<nav>
-<a href="#">Home</a>
-<a href="#">Services</a>
-<a href="#">About</a>
-<a href="#">Contact</a>
-</nav>
+    <!-- About Section (Mission & Vision) -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="section-title slide-up">
+                <h2>About The AQ</h2>
+                <p>Bridging the gap between premium brands and elite creators.</p>
+            </div>
+            <div class="about-grid">
+                <div class="glass-card slide-up">
+                    <i class="fas fa-bullseye gold-icon"></i>
+                    <h3>Our Mission</h3>
+                    <p>To empower brands with authentic voices and provide creators with limitless opportunities to monetize their influence through transparent, high-ROI campaigns.</p>
+                </div>
+                <div class="glass-card slide-up delay-1">
+                    <i class="fas fa-eye gold-icon"></i>
+                    <h3>Our Vision</h3>
+                    <p>To become the global gold standard in influencer marketing, fostering a digital ecosystem where creativity meets commercial success seamlessly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-</header>
+    <!-- Founder & CEO -->
+    <section id="founder" class="founder section-padding section-dark">
+        <div class="container">
+            <div class="founder-wrapper">
+                <div class="founder-images slide-right">
+                    <!-- Using Provided Google Drive Images -->
+                    <img src="https://drive.google.com/uc?export=view&id=1KH2i9Y-rg9-jE6MWbK0tGbRI5Xig5z0C" alt="Arman Qureshi - Founder & CEO" class="main-img">
+                    <div class="sub-images">
+                        <img src="https://drive.google.com/uc?export=view&id=1a_xB87Olkd3a5U-PT1G_KIAnYSR6OjU1" alt="Arman Qureshi">
+                        <img src="https://drive.google.com/uc?export=view&id=1dyFW2WqnTRhVU_qoKSwDMW5P7pQrsQXh" alt="Arman Qureshi">
+                    </div>
+                </div>
+                <div class="founder-content slide-left">
+                    <h2>Meet The Visionary</h2>
+                    <h3 class="gold-text">Arman Qureshi</h3>
+                    <p class="subtitle">Founder & CEO, The AQ Media</p>
+                    <p>Arman Qureshi established The AQ Media with a singular vision: to revolutionize how brands connect with audiences in the digital age. Under his leadership, AQ Media has grown into a luxury hub for elite creators and premium brands.</p>
+                    <p>With deep roots in Mumbai's dynamic media landscape, Arman combines analytical strategy with creative brilliance to deliver campaigns that don't just trend—they convert.</p>
+                    <div class="founder-socials">
+                        <a href="mailto:theaqmedia@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a href="https://wa.me/917208269578"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section class="hero">
+    <!-- Services -->
+    <section id="services" class="services section-padding">
+        <div class="container">
+            <div class="section-title slide-up">
+                <h2>Our Premium Services</h2>
+                <p>End-to-end solutions for digital dominance.</p>
+            </div>
+            <div class="services-grid">
+                <div class="glass-card slide-up"><i class="fas fa-users"></i> <h3>Influencer Marketing</h3></div>
+                <div class="glass-card slide-up"><i class="fab fa-instagram"></i> <h3>Instagram Promotions</h3></div>
+                <div class="glass-card slide-up"><i class="fab fa-youtube"></i> <h3>YouTube Promotions</h3></div>
+                <div class="glass-card slide-up"><i class="fas fa-handshake"></i> <h3>Brand Collaborations</h3></div>
+                <div class="glass-card slide-up"><i class="fas fa-video"></i> <h3>UGC Campaigns</h3></div>
+                <div class="glass-card slide-up"><i class="fas fa-chart-line"></i> <h3>Campaign Management</h3></div>
+                <div class="glass-card slide-up"><i class="fas fa-chess-knight"></i> <h3>Social Media Strategy</h3></div>
+                <div class="glass-card slide-up"><i class="fas fa-user-tie"></i> <h3>Creator Management</h3></div>
+            </div>
+        </div>
+    </section>
 
-<div>
+    <!-- Gallery & Portfolio -->
+    <section id="gallery" class="gallery section-padding section-dark">
+        <div class="container">
+            <div class="section-title slide-up">
+                <h2>Our Portfolio & Gallery</h2>
+                <p>A glimpse into the luxury aesthetics of The AQ Media.</p>
+            </div>
+            <div class="gallery-grid slide-up">
+                <div class="gallery-item"><img src="https://drive.google.com/uc?export=view&id=1KH2i9Y-rg9-jE6MWbK0tGbRI5Xig5z0C" alt="Gallery 1"></div>
+                <div class="gallery-item"><img src="https://drive.google.com/uc?export=view&id=1a_xB87Olkd3a5U-PT1G_KIAnYSR6OjU1" alt="Gallery 2"></div>
+                <div class="gallery-item"><img src="https://drive.google.com/uc?export=view&id=1dyFW2WqnTRhVU_qoKSwDMW5P7pQrsQXh" alt="Gallery 3"></div>
+            </div>
+        </div>
+    </section>
 
-<h1>India's Next-Gen Influencer Marketing Agency</h1>
+    <!-- Forms Section -->
+    <section id="forms-section" class="forms-section section-padding">
+        <div class="container">
+            <div class="form-container glass-card slide-up">
+                <div class="form-tabs">
+                    <button class="tab-btn active" id="brand-tab" onclick="openForm('brand')">Brand Inquiry</button>
+                    <button class="tab-btn" id="creator-tab" onclick="openForm('creator')">Creator Registration</button>
+                </div>
 
-<p>
-Connecting Brands with Trusted Creators<br>
-Promotions • Campaigns • UGC Content
-</p>
+                <!-- Brand Form -->
+                <form id="brand-form" class="active-form custom-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+                    <div class="input-group">
+                        <input type="text" name="Company Name" placeholder="Company Name" required>
+                        <input type="text" name="Contact Person" placeholder="Contact Person" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" name="Email" placeholder="Email Address" required>
+                        <input type="tel" name="Phone" placeholder="Phone Number" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" name="Budget" placeholder="Campaign Budget (₹)" required>
+                    </div>
+                    <textarea name="Campaign Details" rows="4" placeholder="Tell us about your campaign details..." required></textarea>
+                    <button type="submit" class="btn-gold full-width">Submit Inquiry</button>
+                </form>
 
-<a class="btn" href="#">
-Get Started
-</a>
+                <!-- Creator Form -->
+                <form id="creator-form" class="custom-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+                    <div class="input-group">
+                        <input type="text" name="Full Name" placeholder="Full Name" required>
+                        <input type="email" name="Email" placeholder="Email Address" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="tel" name="Phone" placeholder="Phone / WhatsApp" required>
+                        <input type="text" name="Niche" placeholder="Content Niche (e.g. Fashion, Tech)" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="url" name="Instagram Link" placeholder="Instagram Profile Link">
+                        <input type="url" name="YouTube Link" placeholder="YouTube Channel Link">
+                    </div>
+                    <div class="input-group">
+                        <input type="text" name="Followers" placeholder="Total Followers/Subscribers" required>
+                    </div>
+                    <button type="submit" class="btn-gold full-width">Apply as Creator</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
-</div>
+    <!-- Testimonials & FAQ -->
+    <section id="faq-testimonials" class="section-padding section-dark">
+        <div class="container split-layout">
+            <div class="testimonials slide-right">
+                <h2 class="gold-text">Client Success</h2>
+                <div class="glass-card testimonial-card">
+                    <p>"The AQ Media completely transformed our online presence. Their creators delivered beyond expectations. A true luxury agency experience."</p>
+                    <h4>- Premium Lifestyle Brand</h4>
+                </div>
+            </div>
+            <div class="faq slide-left">
+                <h2 class="gold-text">FAQ</h2>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header">What is the minimum budget for campaigns?</div>
+                        <div class="accordion-content">We curate campaigns tailored to your goals. Please fill out the Brand Inquiry form for a custom quote.</div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">How do I join as a creator?</div>
+                        <div class="accordion-content">Fill out the Creator Registration form above. Our management team will review your profile and reach out if you're a fit for our exclusive roster.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-</section>
-<section id="about" style="padding:60px 20px;background:#111;color:white;text-align:center;">
-  <h2>About The AQ Media</h2>
-  <p style="max-width:800px;margin:auto;">
-    The AQ Media is India's Next-Gen Influencer Marketing Agency.
-    We help brands grow through Influencer Marketing, UGC Content,
-    Brand Promotions and Digital Campaigns.
-  </p>
-</section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <div class="section-title slide-up">
+                <h2>Get In Touch</h2>
+                <p>Ready to create digital excellence?</p>
+            </div>
+            <div class="contact-info glass-card slide-up">
+                <div class="info-item">
+                    <i class="fas fa-envelope gold-icon"></i>
+                    <h4>Email</h4>
+                    <p><a href="mailto:theaqmedia@gmail.com">theaqmedia@gmail.com</a></p>
+                </div>
+                <div class="info-item">
+                    <i class="fab fa-whatsapp gold-icon"></i>
+                    <h4>WhatsApp</h4>
+                    <p><a href="https://wa.me/917208269578">+91 7208269578</a></p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt gold-icon"></i>
+                    <h4>Headquarters</h4>
+                    <p>Dr. Zakir Hussain Nagar, Link Road,<br>Govandi, Mumbai, Maharashtra 400043, India</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="services" style="padding:60px 20px;background:#181818;color:white;text-align:center;">
-  <h2>Our Services</h2>
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <h2>The <span>AQ</span> Media</h2>
+                <p>Premium Influencer Marketing</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#gallery">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="https://wa.me/917208269578"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> The AQ Media. Founded by Arman Qureshi. All Rights Reserved.</p>
+        </div>
+    </footer>
 
-  <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;margin-top:30px;">
-
-    <div style="background:#222;padding:20px;border-radius:10px;width:250px;">
-      <h3>Influencer Marketing</h3>
-      <p>Connect your brand with trusted influencers.</p>
-    </div>
-
-    <div style="background:#222;padding:20px;border-radius:10px;width:250px;">
-      <h3>UGC Content</h3>
-      <p>Authentic user-generated content for brands.</p>
-    </div>
-
-    <div style="background:#222;padding:20px;border-radius:10px;width:250px;">
-      <h3>Brand Promotions</h3>
-      <p>Grow your business with powerful campaigns.</p>
-    </div>
-
-  </div>
-</section>
-<section id="contact" style="padding:60px 20px;background:#111;color:white;text-align:center;">
-  <h2>Contact Us</h2>
-
-  <p>Email: theaqmedia@gmail.com</p>
-  <p>Phone: +91 7208269578</p>
-  <p>Location: Mumbai, India</p>
-
-  <a href="https://wa.me/917208269578"
-     style="display:inline-block;margin-top:20px;padding:12px 25px;background:#25D366;color:white;text-decoration:none;border-radius:8px;">
-     Chat on WhatsApp
-  </a>
-</section>
-
-<footer style="background:#000;color:#999;text-align:center;padding:20px;">
-  © 2026 The AQ Media. All Rights Reserved.
-</footer>
-
+    <script src="script.js"></script>
 </body>
-</html>
+                              </html>
+                              
